@@ -1,4 +1,4 @@
-/* ========== RESET & BASE STYLES ========== */
+/* ===== RESET & BASE ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,86 +6,96 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #2e2e2e;
   line-height: 1.6;
 }
 
-/* ========== HEADER ========== */
+/* ===== HEADER ===== */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   padding: 20px 60px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .logo img {
-  height: 90px;
+  height: 70px;
 }
 
-.nav {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 24px;
 }
 
-.nav li a {
+.nav-links li a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  color: #2e2e2e;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav li a:hover,
-.nav li a.active {
+.nav-links li a:hover,
+.nav-links li a.active {
   background-color: #eb6025;
   color: #fff;
 }
 
-/* ========== MAIN SECTION TITLES ========== */
-main section h2 {
+/* ===== PAGE TITLE ===== */
+main h1 {
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
+  color: #eb6025;
   margin-top: 40px;
-  color: #222;
 }
 
-main section p {
+main p {
   text-align: center;
   margin: 10px auto 30px;
   max-width: 700px;
-  color: #666;
   font-size: 16px;
+  color: #555;
 }
 
-/* ========== FILTER DROPDOWN ========== */
+/* ===== FILTERS ===== */
 .filters {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.filters label {
-  margin-right: 10px;
-  font-weight: bold;
+.filters select {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 2px solid #eb6025;
+  border-radius: 6px;
+  background-color: #fff;
   color: #333;
 }
 
-.filters select {
-  padding: 8px 14px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-/* ========== SERVICES GRID ========== */
+
+/* ===== SERVICES GRID ===== */
 .services-grid {
   display: flex;
   flex-wrap: wrap;
@@ -95,91 +105,107 @@ main section p {
 }
 
 .service-card {
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
   width: 280px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   overflow: hidden;
-  transition: transform 0.3s ease;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-}
-
-.service-card .category {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #eb6025;
-  color: #fff;
-  padding: 5px 10px;
-  font-size: 12px;
-  border-bottom-right-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .service-card img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
 }
 
+.category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #eb6025;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* ===== FAVORITE ICON BUTTON ===== */
+.favorite-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.favorite-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.2);
+  border-color: #eb6025;
+}
+
+/* ===== TEXT CONTENT IN CARD ===== */
 .service-card h3 {
   margin: 15px;
   font-size: 20px;
   color: #222;
 }
 
-.service-card .meta {
+.meta {
   margin: 0 15px;
   font-size: 14px;
   color: #777;
 }
 
 .trainer {
-  color: #888;
+  color: #45b5d4;
   font-style: italic;
-  font-size: 14px;
 }
 
-.service-card .description {
+.description {
   margin: 10px 15px;
   color: #555;
   font-size: 15px;
   flex-grow: 1;
 }
 
-.service-card strong {
-  margin: 10px 15px 15px;
-  display: block;
-  font-size: 18px;
-  color: #eb6025;
+.price {
+  margin: 14px 15px 20px;
+  background: #eb6025;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+  text-align : center;
 }
 
-/* ========== ⭐ FAVORITE BUTTON ========== */
-.favorite-btn {
-  position: absolute;
-  right: 10px;
-  font-size: 26px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #bbb;
-  transition: transform 0.2s ease;
-}
-
-.favorite-btn:hover,
-.favorite-btn:active {
-  transform: scale(1.5);
-}
-
-
-/* ========== FOOTER ========== */
+/* ===== FOOTER ===== */
 .footer {
-  background-color: #222;
+  background-color: #2e2e2e;
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -198,18 +224,18 @@ main section p {
 }
 
 .footer .social a:hover {
-  color: #ffb347;
+  color: #f5d19c;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     padding: 20px;
   }
 
-  .nav {
+  .nav-links {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -217,12 +243,62 @@ main section p {
   .services-grid {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
 
   .service-card {
     width: 90%;
   }
 }
+
+
+
+
+
+/* ===== FAVORITES PAGE CUSTOM STYLES ===== */
+/* ===== TITLE SECTION ===== */
+.intro {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.intro h1 {
+  font-size: 32px;
+  color: #EB6025;
+  margin-bottom: 12px;
+}
+
+.intro p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -301,3 +377,67 @@ main section p {
   background-color: #c44f1c; 
 }
 
+
+
+
+
+
+
+
+
+.form-section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.course-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.course-form input,
+.course-form select,
+.course-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.course-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.center-btn {
+  text-align: center;
+}
+
+.center-btn .btn {
+  width: 200px;
+}
+
+
+.select-staff {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: scale(1.2);
+}
