@@ -1,20 +1,178 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>test </title>  
-	</head>
-	<body>
-	
-	
-	<p>fanar</p>
-	<p>Dalia</p>
-	<p>IT</p>
-	<p>fanar</p>
-	 <p>IT</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HAWI Club | Home</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
 
-	
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="image/logo.png" alt="Hawi Logo">
+    </div>
 
-	</body>
-	
-	</html>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="dashboard.html">Customer Dashboard</a></li>
+        <li><a href="provider.html">Provider Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Slider -->
+    <section class="hero" aria-label="Hero Slider">
+      <div class="hero-track">
+        <figure class="hero-slide">
+          <img src="image/art.png" alt="Art class tools on a desk">
+        </figure>
+        <figure class="hero-slide">
+          <img src="image/computer.png" alt="Kids learning coding in a lab">
+        </figure>
+        <figure class="hero-slide">
+          <img src="image/football.png" alt="Football training on field">
+        </figure>
+      </div>
+
+      <div class="hero-dots" aria-hidden="true">
+        <span class="dot is-active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- Vision -->
+    <section class="vision">
+      <h2>Vision</h2>
+      <p>
+        Your trusted platform connecting customers with top-quality service providers.
+        We make it easy to find, book, and manage services for all your needs.
+      </p>
+    </section>
+
+    <!-- New Services -->
+    <section class="new-services">
+      <h2>New Services</h2>
+
+      <div class="cards">
+        <article class="card">
+          <img src="image/art.png" alt="Art workshop materials" class="card-media">
+          <div class="card-body">
+            <h3 class="card-title">Art Workshop</h3>
+            <p class="card-desc">Painting & drawing classes for kids and teens.</p>
+            <div class="card-meta"><span class="price">150 SAR</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="image/computer.png" alt="Computer lab for coding" class="card-media">
+          <div class="card-body">
+            <h3 class="card-title">Coding Lab</h3>
+            <p class="card-desc">Intro to programming with fun projects.</p>
+            <div class="card-meta"><span class="price">120 SAR</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="image/football.png" alt="Football coaching session" class="card-media">
+          <div class="card-body">
+            <h3 class="card-title">Football Coaching</h3>
+            <p class="card-desc">Skills, drills, and friendly matches.</p>
+            <div class="card-meta"><span class="price">100 SAR</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- What Our Students Say -->
+    <section class="testimonials">
+      <h2>What Our Students Say</h2>
+      <div class="reviews">
+
+        <article class="review">
+          <img class="avatar" src="image/profile.png" alt="Profile icon">
+          <strong class="name">Noura</strong>
+          <p class="stars" aria-label="5 out of 5">★★★★★</p>
+          <p class="text">“Great instructors — my kid loved the art class!”</p>
+        </article>
+
+        <article class="review">
+          <img class="avatar" src="image/profile.png" alt="Profile icon">
+          <strong class="name">Fahad</strong>
+          <p class="stars" aria-label="4 out of 5">★★★★☆</p>
+          <p class="text">“Coding Lab was fun and easy to follow.”</p>
+        </article>
+
+        <article class="review">
+          <img class="avatar" src="image/profile.png" alt="Profile icon">
+          <strong class="name">Maha</strong>
+          <p class="stars" aria-label="5 out of 5">★★★★★</p>
+          <p class="text">“Coaches are supportive — football sessions are awesome.”</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Weekly Hobby Challenge -->
+    <section class="weekly-challenge">
+      <img src="image/target.png" alt="Target icon" class="target-icon">
+      <h2>🗓️ 1- Weekly Hobby Challenge!</h2>
+      <p>
+        Join our checklist of fun challenges — pottery, swimming, music and much more!
+        If you want to join us be sure to write your E-mail!!
+      </p>
+      <ul class="bullets">
+        <li>Weekly Challenges</li>
+        <li>Progress Tracking</li>
+      </ul>
+    </section>
+
+    <!-- Statistics & Figures -->
+    <section class="stats">
+      <h2>Statistics &amp; Figures</h2>
+
+      <div class="stats-grid">
+        <div class="stat">
+          <img src="image/targetaudienc.png" alt="Students icon" class="stat-icon">
+          <strong class="num">2,500+</strong>
+          <span class="label">Students</span>
+        </div>
+
+        <div class="stat">
+          <img src="image/prize.png" alt="Awards icon" class="stat-icon">
+          <strong class="num">150+</strong>
+          <span class="label">Awards</span>
+        </div>
+
+        <div class="stat">
+          <img src="image/schedule.png" alt="Events icon" class="stat-icon">
+          <strong class="num">50+</strong>
+          <span class="label">Events</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content">
+      <p>Contact us: info@hawiclub.com | +966 55 555 5555</p>
+      <div class="social">
+        <a href="https://www.instagram.com/hawi_228?igsh=MXdjZTJlenR5MmdwdQ==">Instagram</a> |
+        <a href="#">Twitter</a> 
+      </div>
+      <p>&copy; 2025 HAWI Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
