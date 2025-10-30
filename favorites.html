@@ -1,94 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Favorites | Hawi</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+	<html lang="en">
+	<!--  Head -->
+		<head>
+			<meta charset="UTF-8" >
+			<meta name="viewport" content="width=device-width, initial-scale=1" >
+			<title> favorite | Hawi</title>
+			<link rel="stylesheet" href="Stest.css" >
+		</head>
+	<!-- body -->
+		<body>
+	
+			<!-- header section -->
+			<header class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="Hawi Logo" ></a>
+				</div>
 
-  <!-- ====== Header Section ====== -->
-    <header class="header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Hawi Logo" >
-        </a>
-      </div>
+				<nav>
+					<ul class="nav-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="dashboard.html" class="active" >Customer Dashboard</a></li>
+						<li><a href="provider.html">Provider Dashboard</a></li>
+					</ul>
+				</nav>
+	
+			</header>
+		
+			 <main id="main-content">
+			 <!-- Page Title -->
+				<section class="page-title">
+					<h1>your favorite</h1>
+					<p>Your favorite hobbies are all here! Review them anytime or explore new experiences that match your passion. </p>
+				</section>
+				
+				
+				<!-- Services Grid -->
+				<section id="services-grid" class="services-grid">
+				<!-- ====== Card 2 ====== -->
+					<div class="service-card">
+						<button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites"><img src="images/heart.png" alt="Add to favorites icon"></button>
+						<div class="category">Music</div>
+						<img src="images/music.jpg" alt="Music Workshop" >
+						<h3>Saxophone Music Basics</h3>
+						<p class="meta"><span class="datetime">14 Feb 2026 | Riyadh | 1 hour</span><br ><span class="trainer">Trainer: Fanar Barboud</span></p>
+						<p class="description">Learn the beauty of oud playing with guided musical sessions for all levels.</p>
+						<strong class="price">150 SAR</strong>
+					</div>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html" >Services</a></li>
-          <li><a href="favorites.html" class="active">Favorites</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="dashboard.html">Customer Dashboard</a></li>
-          <li><a href="provider.html">Provider Dashboard</a></li>
-        </ul>
-      </nav>
-    </header>
+				<!-- ====== Card 5 ====== -->
+					<div class="service-card">
+						<button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites"><img src="images/heart.png" alt="Add to favorites icon"></button>
+						<div class="category">Technology</div>
+						<img src="images/pc.jpg" alt="Computer Course" >
+						<h3>Digital Skills Workshop</h3>
+						<p class="meta"><span class="datetime">6 Aug 2026 | Taif | 1 hour</span><br ><span class="trainer">Trainer: Hamoud Al-Dhafiri</span></p>
+						<p class="description">Build your confidence using computers with hands-on practice in typing, file management, internet safety, and digital tools.</p>
+						<strong class="price">120 SAR</strong>
+					</div>
+					
+				<!-- ====== Card 6 ====== -->
+					<div class="service-card">
+						<button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites"><img src="images/heart.png" alt="Add to favorites icon"></button>
+						<div class="category">photograph </div>
+						<img src="images/photograph.jpg" alt="photograph Course" >
+						<h3>photograph Workshop</h3>
+						<p class="meta"><span class="datetime">2 Aug 2026 | Riyadh | 2 hour</span><br ><span class="trainer">Trainer: Mohammed Al-Qahtani</span></p>
+						<p class="description">Discover the art of capturing moments through your lens! Learn professional photography techniques, from mastering lighting and composition to editing your shots like a pro. This course helps beginners and hobbyists develop their creative eye and confidence behind the camera.</p>
+						<strong class="price">170 SAR</strong>
+					</div>
+					
+					
+					
+					
+					
+					
+				</section>
+		
+			</main>
+		
+		
+		
+		
+		
+			<!-- ====== Footer Section ====== -->
+			<footer class="footer">
+				<div class="footer-content">
+					<p class="contact"> Contact us: <a href="#main-content">info@hawiclub.com</a> | <a href="#main-content">+966 55 555 5555</a></p>
+					<div class="social">
+						<a href="https://www.instagram.com/hawi_228?igsh=MXdjZTJlenR5MmdwdQ==" target="_blank">Instagram</a>
+						<span>|</span>
+						<a href="#main-content">Twitter</a>
+					</div>
 
+					<p class="copyright">&copy; 2025 HAWI Club . All rights reserved.</p>
+				</div>
+			</footer>
 
-  <!-- Main -->
-  <main id="main-content">
-    <section class="intro">
-      <h1>My Favorites</h1>
-      <p>You’ve saved these services to your favorites. Review them anytime, or head back to explore more hobbies!</p>
-    </section>
+		
+	
+		</body>
 
-    <!-- Services Grid -->
-    <section class="services-grid favourites-grid">
-
-      <!-- Card 1 -->
-      <div class="service-card">
-        <button class="favorite-btn active" aria-label="Remove from favorites" title="Remove from favorites">
-          <img src="images/heart.png" alt="Favorited">
-        </button>
-        <div class="category">Music</div>
-        <img src="images/music.jpg" alt="Music Workshop">
-        <h3>Saxophone Music Basics</h3>
-        <p class="meta">
-          <span class="datetime">14 Feb 2026 | Riyadh | 1 hour</span><br>
-          <span class="trainer">Trainer: Fanar Barboud</span>
-        </p>
-        <p class="description">
-          Learn the beauty of oud playing with guided musical sessions for all levels.
-        </p>
-        <strong class="price">150 SAR</strong>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="service-card">
-        <button class="favorite-btn active" aria-label="Remove from favorites" title="Remove from favorites">
-          <img src="images/heart.png" alt="Favorited">
-        </button>
-        <div class="category">Technology</div>
-        <img src="images/pc.jpg" alt="Computer Course">
-        <h3>Digital Skills Workshop</h3>
-        <p class="meta">
-          <span class="datetime">6 Aug 2026 | Taif | 1 hour</span><br>
-          <span class="trainer">Trainer: Hamoud Al-Dhafiri</span>
-        </p>
-        <p class="description">
-          Build your confidence using computers with hands-on practice in typing, file management, internet safety, and digital tools.
-        </p>
-        <strong class="price">120 SAR</strong>
-      </div>
-
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="content">
-      <p>Contact us: info@hawiclub.com | +966 55 555 5555</p>
-      <div class="social">
-        <a href="https://www.instagram.com/hawi_228">Instagram</a> |
-        <a href="#main-content">Twitter</a>
-      </div>
-      <p>&copy; 2025 HAWI Club. All rights reserved.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+	</html>

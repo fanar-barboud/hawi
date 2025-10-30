@@ -1,177 +1,160 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- ✔ أضفنا lang -->
+	<html lang="en">
+	<!--  Head -->
+		<head>
+			<meta charset="UTF-8" >
+			<meta name="viewport" content="width=device-width, initial-scale=1" >
+			<title> Provider Dashboard | Hawi</title>
+			<link rel="stylesheet" href="Stest.css" >
+		</head>
+	<!-- body -->
+		<body>
+	
+			<!-- header section -->
+			<header class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="Hawi Logo" ></a>
+				</div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Provider Dashboard | Hawi</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+				<nav>
+					<ul class="nav-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="dashboard.html" >Customer Dashboard</a></li>
+						<li><a href="provider.html"  class="active" >Provider Dashboard</a></li>
+					</ul>
+				</nav>
+	
+			</header>
+		
+			 <main id="main-content">
+			    <!-- Page Title -->
+				<section class="page-title">
+					<h1> Welcome to Your Dashboard</h1>
+					<p>Manage your services and monitor platform activity. </p>
+				</section>
+				
+				
+			    <!-- Statistics Section -->
+				<section class="stats">
+					<div class="stat-card">
+						<img src="images/teacher.png" alt="Total Services Icon">
+						<h3>Total Services</h3>
+						<p>6</p>
+					</div>
+					<div class="stat-card">
+						<img src="images/average_rating_icon.png" alt="Average Rating Icon"> 
+						<h3>Average Rating</h3>
+						<p>4.9</p>
+					</div>
+					<div class="stat-card">
+						<img src="images/training.png" alt="Total Enrollments Icon">
+						<h3>Total Enrollments</h3>
+						<p>6</p>
+					</div>
+				</section>
+				
+				
+				
+				<!-- Services Grid -->
+				<!-- ===== SERVICES SECTION WITH BOX ===== -->
+                <div class="services-box">
+					<section id="services-grid" class="services-grid">
 
-<body>
-	<main>
-  <!-- ====== Header Section ====== -->
-    <header class="header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Hawi Logo" >
-        </a>
-      </div>
+					<!-- ====== Card 1 ====== -->
+						<div class="service-card">
+							<div class="category">Art</div>
+							<img src="images/art.png" alt="Art Workshop" >
+							<h3>Marsam Club</h3>
+							<p class="meta"><span class="datetime">15 Oct 2025 | Jeddah | 1.5 hours</span><br ><span class="trainer">Trainer: Dalia Al-Otabibi</span></p>
+							<p class="description">Empowers artists and hobbyists to grow their skills through inspiring workshops, events, and exhibitions that spark creativity and community.</p>
+							<strong class="price">85 SAR</strong>
+						</div>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html" c>Services</a></li>
-          <li><a href="favorites.html">Favorites</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="dashboard.html">Customer Dashboard</a></li>
-          <li><a href="provider.html" class="active">Provider Dashboard</a></li>
-        </ul>
-      </nav>
-    </header>
+						<!-- ====== Card 2 ====== -->
+						<div class="service-card">
+							<div class="category">Music</div>
+							<img src="images/music.jpg" alt="Music Workshop" >
+							<h3>Saxophone Music Basics</h3>
+							<p class="meta"><span class="datetime">14 Feb 2026 | Riyadh | 1 hour</span><br ><span class="trainer">Trainer: Fanar Barboud</span></p>
+							<p class="description">Learn the beauty of oud playing with guided musical sessions for all levels.</p>
+							<strong class="price">150 SAR</strong>
+						</div>
 
-  <!-- Main Content -->
-    <main id="main-content">
-    <!-- Intro Section -->
-    <section class="intro">
-      <h1>Provider Dashboard</h1>
-      <p>Manage your services, monitor enrollments, and check your performance statistics.</p>
-    </section>
+						<!-- ====== Card 3 ====== -->
+						<div class="service-card">
+							<div class="category">Fitness</div>
+							<img src="images/football.jpg" alt="Football Training" >
+							<h3>Football Skills Clinic</h3>
+							<p class="meta"><span class="datetime">15 Dec 2025 | Jeddah | 2 hours</span><br ><span class="trainer">Trainer: Wajd Al-Rashid</span></p>
+							<p class="description">Learn football skills in a fun and safe training environment, focusing on dribbling, passing, and teamwork for all levels and ages.</p>
+							<strong class="price">100 SAR</strong>
+						</div>
 
-    <!-- Statistics Section -->
-    <section class="stats">
-      <div class="stat-card">
-        <img src="images/teacher.png" alt="Total Services Icon">
-        <h3>Total Services</h3>
-        <p>4</p>
-      </div>
-      <div class="stat-card">
-        <img src="images/average_rating_icon.png" alt="Average Rating Icon"> <!-- ✔ عدلنا اسم الصورة بدون مسافات -->
-        <h3>Average Rating</h3>
-        <p>4</p>
-      </div>
-      <div class="stat-card">
-        <img src="images/training.png" alt="Total Enrollments Icon">
-        <h3>Total Enrollments</h3>
-        <p>4</p>
-      </div>
-    </section>
+						<!-- ====== Card 4 ====== -->
+						<div class="service-card">
+							<div class="category">Cook</div>
+							<img src="images/cook.jpg" alt="Cooking Course" >
+							<h3>Zadk</h3>
+							<p class="meta"><span class="datetime">1 Jun 2026 | Abha | 4 hours</span><br ><span class="trainer">Trainer: Jumana Al-Hamoud</span></p>
+							<p class="description">Zadk Club offers a creative space to explore skills, talents, and ideas through workshops, interactive events, and community-driven activities.</p>
+							<strong class="price">300 SAR</strong>
+						</div>
 
-    
-      <!-- Services Grid -->
-      <section class="services-grid">
+						<!-- ====== Card 5 ====== -->
+						<div class="service-card">
+							<div class="category">Technology</div>
+							<img src="images/pc.jpg" alt="Computer Course" >
+							<h3>Digital Skills Workshop</h3>
+							<p class="meta"><span class="datetime">6 Aug 2026 | Taif | 1 hour</span><br ><span class="trainer">Trainer: Hamoud Al-Dhafiri</span></p>
+							<p class="description">Build your confidence using computers with hands-on practice in typing, file management, internet safety, and digital tools.</p>
+							<strong class="price">120 SAR</strong>
+						</div>
+						
+						<!-- ====== Card 6 ====== -->
+						<div class="service-card">
+							<div class="category">photograph </div>
+							<img src="images/photograph.jpg" alt="Photography Workshop Course" >
+							<h3>photograph Workshop</h3>
+							<p class="meta"><span class="datetime">2 Aug 2026 | Riyadh | 2 hour</span><br ><span class="trainer">Trainer: Mohammed Al-Qahtani</span></p>
+							<p class="description">Discover the art of capturing moments through your lens! Learn professional photography techniques, from mastering lighting and composition to editing your shots like a pro. This course helps beginners and hobbyists develop their creative eye and confidence behind the camera.</p>
+							<strong class="price">170 SAR</strong>
+						</div>
+						
+						
+						<!-- Actions -->
+						<div class="dashboard-actions">
+							<div class="action-buttons">
+								<a href="add-service.html" class="btn">➕ Add New Service</a>
+								<a href="manage-staff.html" class="btn delete">🗑️ Delete Service</a>
+							</div>
+						</div>
+					
+					</section>
+				</div>
+			</main>
+		
+		
+		
+		
+		
+			<!-- ====== Footer Section ====== -->
+			<footer class="footer">
+				<div class="footer-content">
+					<p class="contact"> Contact us: <a href="#main-content">info@hawiclub.com</a> | <a href="#main-content">+966 55 555 5555</a></p>
+					<div class="social">
+						<a href="https://www.instagram.com/hawi_228?igsh=MXdjZTJlenR5MmdwdQ==" target="_blank">Instagram</a>
+						<span>|</span>
+						<a href="#main-content">Twitter</a>
+					</div>
 
-        <!-- ====== Card 1 ====== -->
-        <div class="service-card">
-          <button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites">
-            <img src="images/heart.png" alt="Add to favorites icon">
-          </button>
-          <div class="category">Art</div>
-          <img src="images/art.png" alt="Art Workshop" >
-          <h3>Marsam Club</h3>
-          <p class="meta">
-            <span class="datetime">15 Oct 2025 | Jeddah | 1.5 hours</span><br >
-            <span class="trainer">Trainer: Dalia Al-Otabibi</span>
-          </p>
-          <p class="description">
-            Empowers artists and hobbyists to grow their skills through inspiring workshops, events, and exhibitions that spark creativity and community.
-          </p>
-          <strong class="price">85 SAR</strong>
-        </div>
+					<p class="copyright">&copy; 2025 HAWI Club . All rights reserved.</p>
+				</div>
+			</footer>
 
-        <!-- ====== Card 2 ====== -->
-        <div class="service-card">
-          <button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites">
-            <img src="images/heart.png" alt="Add to favorites icon">
-          </button>
-          <div class="category">Music</div>
-          <img src="images/music.jpg" alt="Music Workshop" >
-          <h3>Saxophone Music Basics</h3>
-          <p class="meta">
-            <span class="datetime">14 Feb 2026 | Riyadh | 1 hour</span><br >
-            <span class="trainer">Trainer: Fanar Barboud</span>
-          </p>
-          <p class="description">
-            Learn the beauty of oud playing with guided musical sessions for all levels.
-          </p>
-          <strong class="price">150 SAR</strong>
-        </div>
+		
+	
+		</body>
 
-        <!-- ====== Card 3 ====== -->
-        <div class="service-card">
-          <button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites">
-            <img src="images/heart.png" alt="Add to favorites icon">
-          </button>
-          <div class="category">Fitness</div>
-          <img src="images/football.jpg" alt="Football Training" >
-          <h3>Football Skills Clinic</h3>
-          <p class="meta">
-            <span class="datetime">15 Dec 2025 | Jeddah | 2 hours</span><br >
-            <span class="trainer">Trainer: Wajd Al-Rashid</span>
-          </p>
-          <p class="description">
-            Learn football skills in a fun and safe training environment, focusing on dribbling, passing, and teamwork for all levels and ages.
-          </p>
-          <strong class="price">100 SAR</strong>
-        </div>
-
-        <!-- ====== Card 4 ====== -->
-        <div class="service-card">
-          <button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites">
-            <img src="images/heart.png" alt="Add to favorites icon">
-          </button>
-          <div class="category">Cook</div>
-          <img src="images/cook.jpg" alt="Cooking Course" >
-          <h3>Zadk</h3>
-          <p class="meta">
-            <span class="datetime">1 Jun 2026 | Abha | 4 hours</span><br >
-            <span class="trainer">Trainer: Jumana Al-Hamoud</span>
-          </p>
-          <p class="description">
-            Zadk Club offers a creative space to explore skills, talents, and ideas through workshops, interactive events, and community-driven activities.
-          </p>
-          <strong class="price">300 SAR</strong>
-        </div>
-
-        <!-- ====== Card 5 ====== -->
-        <div class="service-card">
-          <button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites">
-            <img src="images/heart.png" alt="Add to favorites icon">
-          </button>
-          <div class="category">Technology</div>
-          <img src="images/pc.jpg" alt="Computer Course" >
-          <h3>Digital Skills Workshop</h3>
-          <p class="meta">
-            <span class="datetime">6 Aug 2026 | Taif | 1 hour</span><br >
-            <span class="trainer">Trainer: Hamoud Al-Dhafiri</span>
-          </p>
-          <p class="description">
-            Build your confidence using computers with hands-on practice in typing, file management, internet safety, and digital tools.
-          </p>
-          <strong class="price">120 SAR</strong>
-        </div>
-      </section>
-
-    <!-- Actions -->
-    <section class="dashboard-actions">
-      <div class="action-buttons">
-        <a href="add-service.html" class="btn">➕ Add New Service</a>
-        <a href="manage-staff.html" class="btn delete">🗑️ Delete Service</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="content">
-      <p>Contact us: info@hawiclub.com | +966 55 555 5555</p>
-      <div class="social">
-        <a href="https://www.instagram.com/hawi_228?igsh=MXdjZTJlenR5MmdwdQ==">Instagram</a> |
-        <a href="#services-grid">Twitter</a>
-      </div>
-      <p>&copy; 2025 HAWI Club. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-
-</html>
+	</html>

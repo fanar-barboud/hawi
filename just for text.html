@@ -4,7 +4,7 @@
 		<head>
 			<meta charset="UTF-8" >
 			<meta name="viewport" content="width=device-width, initial-scale=1" >
-			<title>Our Services | Hawi</title>
+			<title> Manage Staff | Hawi</title>
 			<link rel="stylesheet" href="Stest.css" >
 		</head>
 	<!-- body -->
@@ -19,115 +19,154 @@
 				<nav>
 					<ul class="nav-links">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="services.html" class="active">Services</a></li>
+						<li><a href="services.html">Services</a></li>
 						<li><a href="about.html">About Us</a></li>
-						<li><a href="dashboard.html">Customer Dashboard</a></li>
-						<li><a href="provider.html">Provider Dashboard</a></li>
+						<li><a href="dashboard.html" >Customer Dashboard</a></li>
+						<li><a href="provider.html"  class="active" >Provider Dashboard</a></li>
+						
 					</ul>
 				</nav>
 	
 			</header>
 		
-			 <main id="main-content">
-			 <!-- Page Title -->
-				<section class="page-title">
-					<h1>Our Services</h1>
-					<p>Discover a range of certified hobby services designed to inspire and connect enthusiasts across Saudi Arabia. </p>
+			<main id="main-content">
+
+				
+				<!-- mange Trainer Section -->
+				<section class="form-section">
+					<h1 class="page-title">Current Staff Members</h1>
 				</section>
 				
 				
-			<!-- Filters Section -->
-				<section class="filters">
-					<label for="sort">Sort by:</label>
-					<select id="sort" name="sort" class="sort-dropdown">
-						<option value="" disabled selected hidden>Select a sorting option</option>
-						<optgroup label="Price">
-							<option value="price-low-high">Low to High</option>
-							<option value="price-high-low">High to Low</option>
-						</optgroup>
-						<optgroup label="Name">
-							<option value="name-a-z">A - Z</option>
-							<option value="name-z-a">Z - A</option>
-						</optgroup>
-					</select>
-				</section>
+				<!-- Section 1: Delete Staff Members FORM -->
+				<form class="staff-form" action="#" method="post">
+					<section>
+						<h2>Current Staff Members</h2>
+						<p>Total Staff: 4</p>
+
+						<div class="staff-list">
+							<!-- Staff Member 1 -->
+							<div class="staff-item">
+								<input type="checkbox" id="trainer1" name="deleteStaff" value="trainer1" class="select-staff">
+								<label for="trainer1">
+									<img src="images/Dalia.jpg" alt="Dalia Al-Otabibi">
+									<span>Dalia Al-Otabibi - Art Specialist</span>
+								</label>
+							</div>
+							
+							<!-- Staff Member 2 -->
+							<div class="staff-item">
+								<input type="checkbox" id="trainer2" name="deleteStaff" value="trainer2" class="select-staff">
+								<label for="trainer2">
+									<img src="images/fanar.jpg" alt="Fanar Barboud">
+									<span>Fanar Barboud - Music Instructor</span>
+								</label>
+							</div>
+							
+							<!-- Staff Member 3 -->
+							<div class="staff-item">
+								<input type="checkbox" id="trainer3" name="deleteStaff" value="trainer3" class="select-staff">
+								<label for="trainer3">
+									<img src="images/Hamoud.jpg" alt="Hamoud Al-Dhafiri">
+									<span>Hamoud Al-Dhafiri - Technology Expert</span>
+								</label>
+							</div>
+							
+							<!-- Staff Member 4 -->
+							<div class="staff-item">
+								<input type="checkbox" id="trainer4" name="deleteStaff" value="trainer4" class="select-staff">
+								<label for="trainer4">
+									<img src="images/Wajd.jpg" alt=" Wajd Al-Rashid">
+									<span> Wajd Al-Rashid - Fitness Coach</span>
+								</label>
+							</div>
+							
+							
+							<!-- Staff Member 5 -->
+							<div class="staff-item">
+								<input type="checkbox" id="trainer4" name="deleteStaff" value="trainer4" class="select-staff">
+								<label for="trainer4">
+									<img src="images/Jumana.jpg" alt=" Jumana Al-Hamoud">
+									<span> Jumana Al-Hamoud - Chef Expert</span>
+								</label>
+							</div>
+							
+							<!-- Staff Member 6 -->
+							<div class="staff-item">
+								<input type="checkbox" id="trainer4" name="deleteStaff" value="trainer4" class="select-staff">
+								<label for="trainer4">
+									<img src="images/Mohammed.jpg" alt="Mohammed Al-Qahtani">
+									<span> Mohammed Al-Qahtani - photograph Expert</span>
+								</label>
+							</div>
+							
+						</div>
+
+						<div class="center-btn">
+							<p>⚠️ <span id="selected-count">0</span> staff member(s) selected</p>
+							<button type="submit" class="btn delete-btn">🗑️ Delete Selected</button>
+						</div>
+					</section>
+				</form>
 				
-				
-				<!-- Services Grid -->
-				<section id="services-grid" class="services-grid">
 
-				<!-- ====== Card 1 ====== -->
-					<div class="service-card">
-						<button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites"> <img src="images/heart.png" alt="Add to favorites icon"></button>
-						<div class="category">Art</div>
-						<img src="images/art.png" alt="Art Workshop" >
-						<h3>Marsam Club</h3>
-						<p class="meta"><span class="datetime">15 Oct 2025 | Jeddah | 1.5 hours</span><br ><span class="trainer">Trainer: Dalia Al-Otabibi</span></p>
-						<p class="description">Empowers artists and hobbyists to grow their skills through inspiring workshops, events, and exhibitions that spark creativity and community.</p>
-						<strong class="price">85 SAR</strong>
-					</div>
+				<!-- Section 2: Add New Staff Member FORM -->
+				<form class="course-form" action="#" method="post">
+					<section style="margin-top: 60px;">
+						<h2>Add New Staff Member</h2>
 
-				<!-- ====== Card 2 ====== -->
-					<div class="service-card">
-						<button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites"><img src="images/heart.png" alt="Add to favorites icon"></button>
-						<div class="category">Music</div>
-						<img src="images/music.jpg" alt="Music Workshop" >
-						<h3>Saxophone Music Basics</h3>
-						<p class="meta"><span class="datetime">14 Feb 2026 | Riyadh | 1 hour</span><br ><span class="trainer">Trainer: Fanar Barboud</span></p>
-						<p class="description">Learn the beauty of oud playing with guided musical sessions for all levels.</p>
-						<strong class="price">150 SAR</strong>
-					</div>
+						<!-- Full Name & Email -->
+						<div class="form-row">
+							<div class="form-group">
+								<label for="fullName">Full Name</label>
+								<input type="text" id="fullName" name="fullName" placeholder="e.g. Mohammed Al-Saeed" required>
+							</div>
 
-				<!-- ====== Card 3 ====== -->
-					<div class="service-card">
-						<button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites"><img src="images/heart.png" alt="Add to favorites icon"> </button>
-						<div class="category">Fitness</div>
-						<img src="images/football.jpg" alt="Football Training" >
-						<h3>Football Skills Clinic</h3>
-						<p class="meta"><span class="datetime">15 Dec 2025 | Jeddah | 2 hours</span><br ><span class="trainer">Trainer: Wajd Al-Rashid</span></p>
-						<p class="description">Learn football skills in a fun and safe training environment, focusing on dribbling, passing, and teamwork for all levels and ages.</p>
-						<strong class="price">100 SAR</strong>
-					</div>
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input type="email" id="email" name="email" placeholder="example@mail.com" required>
+							</div>
+						</div>
 
-				<!-- ====== Card 4 ====== -->
-					<div class="service-card">
-						<button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites"><img src="images/heart.png" alt="Add to favorites icon"></button>
-						<div class="category">Cook</div>
-						<img src="images/cook.jpg" alt="Cooking Course" >
-						<h3>Zadk</h3>
-						<p class="meta"><span class="datetime">1 Jun 2026 | Abha | 4 hours</span><br ><span class="trainer">Trainer: Jumana Al-Hamoud</span></p>
-						<p class="description">Zadk Club offers a creative space to explore skills, talents, and ideas through workshops, interactive events, and community-driven activities.</p>
-						<strong class="price">300 SAR</strong>
-					</div>
+						<!-- Date of Birth & Expertise -->
+						<div class="form-row">
+							<div class="form-group">
+								<label for="dob">Date of Birth</label>
+								<input type="date" id="dob" name="dob" required>
+							</div>
 
-				<!-- ====== Card 5 ====== -->
-					<div class="service-card">
-						<button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites"><img src="images/heart.png" alt="Add to favorites icon"></button>
-						<div class="category">Technology</div>
-						<img src="images/pc.jpg" alt="Computer Course" >
-						<h3>Digital Skills Workshop</h3>
-						<p class="meta"><span class="datetime">6 Aug 2026 | Taif | 1 hour</span><br ><span class="trainer">Trainer: Hamoud Al-Dhafiri</span></p>
-						<p class="description">Build your confidence using computers with hands-on practice in typing, file management, internet safety, and digital tools.</p>
-						<strong class="price">120 SAR</strong>
-					</div>
+							<div class="form-group">
+								<label for="expertise">Area of Expertise</label>
+								<input type="text" id="expertise" name="expertise" placeholder="e.g. Photography" required>
+							</div>
+						</div>
+
+						<!-- Upload Image -->
+						<div class="form-group full-width">
+							<label for="profilePhoto">Upload Profile Photo</label>
+							<input type="file" id="profilePhoto" name="profilePhoto" accept="image/*">
+						</div>
+
+						<!-- Skills -->
+						<div class="form-group full-width">
+							<label for="skills">Skills</label>
+							<textarea id="skills" name="skills" placeholder="e.g. Creative thinking, Teamwork, Communication" required></textarea>
+						</div>
+
+						<!-- Education -->
+						<div class="form-group full-width">
+							<label for="education">Education & Certificates</label>
+							<textarea id="education" name="education" placeholder="e.g. Bachelor's in Art, Certified Trainer" required></textarea>
+						</div>
+
+						<!-- Submit Button -->
+						<div class="center-btn">
+							<button type="submit" class="btn add-btn">➕ Add Staff Member</button>
+						</div>
+					</section>
+				</form>
+
 					
-				<!-- ====== Card 6 ====== -->
-					<div class="service-card">
-						<button class="favorite-btn" aria-label="Add to favorites" title="Add to favorites"><img src="images/heart.png" alt="Add to favorites icon"></button>
-						<div class="category">photograph </div>
-						<img src="images/photograph.jpg" alt="photograph Course" >
-						<h3>photograph Workshop</h3>
-						<p class="meta"><span class="datetime">2 Aug 2026 | Riyadh | 2 hour</span><br ><span class="trainer">Trainer: Reem Al-Qahtani</span></p>
-						<p class="description">Discover the art of capturing moments through your lens! Learn professional photography techniques, from mastering lighting and composition to editing your shots like a pro. This course helps beginners and hobbyists develop their creative eye and confidence behind the camera.</p>
-						<strong class="price">170 SAR</strong>
-					</div>
-					
-					
-					
-					
-					
-					
-				</section>
 		
 			</main>
 		
