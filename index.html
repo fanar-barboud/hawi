@@ -1,187 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HAWI Club | Home</title>
-  <link rel="stylesheet" href="Stest.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Hawi</title>
+    <link rel="stylesheet" href="css.css">
+  </head>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">
-      <img src="image/logo.png" alt="Hawi Logo" />
-    </div>
-    <nav>
-      <ul class="nav">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="favorites.html">Favorites</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="dashboard.html">Customer Dashboard</a></li>
-        <li><a href="provider.html">Provider Dashboard</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+   <!-- header section -->
+			<header class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="Hawi Logo" ></a>
+				</div>
 
-  <main>
+				<nav>
+					<ul class="nav-links">
+						<li><a href="index.html"class="active" >Home</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="dashboard.html" >Customer Dashboard</a></li>
+						<li><a href="provider.html"   >Provider Dashboard</a></li>
+						
+					</ul>
+				</nav>
+	
+			</header>>
 
-    <!-- HERO)-->
-	   <section class="hero-slider" aria-label="Hero Slider">
-	  <div class="hero-track">
-		<div class="hero-slide slide1"></div>
-		<div class="hero-slide slide2"></div>
-		<div class="hero-slide slide3"></div>
-	  </div>
-	  <div class="hero-dots">
-		<span class="dot is-active"></span>
-		<span class="dot"></span>
-		<span class="dot"></span>
-	  </div>
-	</section>
-
-
-    <!-- Vision -->
-    <section class="vision section">
-      <h2>Vision</h2>
-      <p>
-        Your trusted platform connecting customers with top-quality service providers.
-        We make it easy to find, book, and manage services for all your needs.
-      </p>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <img src="images/football.jpg" alt="People enjoying hobbies">
+      <div class="hero-text">
+        <h1>Discover, Learn & Connect</h1>
+        <p>Explore your passion with trainers, clubs, and events around Saudi Arabia.</p>
+        <a href="services.html" class="btn">Explore Hobbies</a>
+        <a href="about.html" class="btn btn-outline">Join the Community</a>
+      </div>
     </section>
 
-    <!-- New Services -->
-    <section class="section">
-      <h2>Our Services</h2>
+    <!-- ===== VISION SECTION ===== -->
+    <section class="vision fadeUp">
+      <div class="vision-content">
+        <div class="vision-text">
+          <h2 class="section-title">Our Vision</h2>
+          <p>Our vision is to empower every hobbyist in Saudi Arabia to learn, grow, and share their passion within a creative community.</p>
+          <a href="about.html" class="btn">Learn More</a>
+        </div>
+        <div class="vision-img">
+          <img src="images/tennis.jpg" alt="Hobbies Vision">
+        </div>
+      </div>
+    </section>
 
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="section fadeUp">
+  <h2 class="section-title">Popular Hobbies</h2>
+
+  <div class="services">
+    <!-- Card 1 -->
+    <article class="card">
+      <div class="card-media" style="background-image:url('images/art.PNG');">
+        <span class="badge">Art</span>
+        <div class="overlay">
+          <h3>Art & Design</h3>
+          <p>Creative workshops for painting, crafts, and digital art.</p>
+          <span class="price">150 SAR</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <div class="card-media" style="background-image:url('images/tiness2.jpg');">
+        <span class="badge">Fitness</span>
+        <div class="overlay">
+          <h3>Fitness & Sports</h3>
+          <p>Join sports clubs and find personal trainers near you.</p>
+          <span class="price">120 SAR</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <div class="card-media" style="background-image:url('images/teq.jpg');">
+        <span class="badge">Technology</span>
+        <div class="overlay">
+          <h3>Technology</h3>
+          <p>Learn coding, robotics, and digital innovation skills.</p>
+          <span class="price">200 SAR</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="card">
+      <div class="card-media" style="background-image:url('images/cook.jpg');">
+        <span class="badge">Cooking</span>
+        <div class="overlay">
+          <h3>Cooking</h3>
+          <p>Enjoy fun cooking sessions and discover new flavors.</p>
+          <span class="price">95 SAR</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials fadeUp">
+      <h2 class="section-title">What Our Members Say</h2>
       <div class="cards">
-        <!-- Card 1 -->
-        <article class="card">
-          <div class="card-media" style="background-image:url('image/art.png');">
-            <span class="badge">Art</span>
-            <div class="overlay">
-              <h3>Art Workshop</h3>
-              <p>Painting &amp; drawing classes for kids and teens.</p>
-              <span class="price">150 SAR</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="card">
-          <div class="card-media" style="background-image:url('image/computer.png');">
-            <span class="badge">Coding</span>
-            <div class="overlay">
-              <h3>Coding Lab</h3>
-              <p>Intro to programming with fun projects.</p>
-              <span class="price">120 SAR</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="card">
-          <div class="card-media" style="background-image:url('image/football.png');">
-            <span class="badge">Football</span>
-            <div class="overlay">
-              <h3>Football Coaching</h3>
-              <p>Skills, drills, and friendly matches.</p>
-              <span class="price">100 SAR</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section">
-      <h2>What Our Students Say</h2>
-
-      <div class="reviews">
-        <article class="review">
-          <img class="avatar" src="image/noura.jpg" alt="Photo of Noura" />
-          <div class="r-head">
-            <strong class="name">Noura</strong>
-            <span class="role">Art Workshop</span>
-          </div>
-          <p class="stars" aria-label="5 out of 5">★★★★★</p>
-          <p class="text">“Great instructors — my kid loved the art class!”</p>
-        </article>
-
-        <article class="review">
-          <img class="avatar" src="image/fahad.jpg" alt="Photo of Fahad" />
-          <div class="r-head">
-            <strong class="name">Fahad</strong>
-            <span class="role">Coding Lab</span>
-          </div>
-          <p class="stars" aria-label="4 out of 5">★★★★☆</p>
-          <p class="text">“Coding Lab was fun and easy to follow.”</p>
-        </article>
-
-        <article class="review">
-          <img class="avatar" src="image/maha.jpg" alt="Photo of Maha" />
-          <div class="r-head">
-            <strong class="name">Maha</strong>
-            <span class="role">Football Coaching</span>
-          </div>
-          <p class="stars" aria-label="5 out of 5">★★★★★</p>
-          <p class="text">“Coaches are supportive — football sessions are awesome.”</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Weekly Hobby Challenge -->
-    <section class="section">
-      <div class="challenge">
-        <h2><img src="image/target.png" alt="" class="t-icon"> Weekly Hobby Challenge!</h2>
-        <p>
-          Join our checklist of fun challenges — pottery, swimming, music and much more!
-          If you want to join us be sure to write your E-mail!!
-        </p>
-        <ul class="bullets">
-          <li>Weekly Challenges</li>
-          <li>Progress Tracking</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Statistics & Figures -->
-    <section class="section">
-      <h2>Statistics &amp; Figures</h2>
-
-      <div class="stats">
-        <div class="stat">
-          <img src="image/targetaudienc.png" alt="Students icon" />
-          <strong>2,500+</strong>
-          <span>Students</span>
+        <div class="testimonial">
+          <img src="images/noura.jpg" alt="User">
+          <h4>Noura Al-Qahtani</h4>
+          <p>“Hawi connected me with a painting club that changed my weekends completely!”</p>
         </div>
-
-        <div class="stat">
-          <img src="image/prize.png" alt="Awards icon" />
-          <strong>150+</strong>
-          <span>Awards</span>
+        <div class="testimonial">
+          <img src="images/fahad.jpg" alt="User">
+          <h4>Fahad Al-Harbi</h4>
+          <p>“I joined a local coding group through Hawi — amazing experience!”</p>
         </div>
-
-        <div class="stat">
-          <img src="image/schedule.png" alt="Events icon" />
-          <strong>50+</strong>
-          <span>Events</span>
+        <div class="testimonial">
+          <img src="images/maha.jpg" alt="User">
+          <h4>Maha Al-Omari</h4>
+          <p>“The platform made it so easy to find new hobbies and events.”</p>
         </div>
       </div>
     </section>
 
-  </main>
+    <!-- ===== WEEKLY CHALLENGE ===== -->
+    <section class="challenge fadeUp">
+      <h2 class="section-title">Weekly Challenge</h2>
+      <p>Join our new weekly challenge and share your skills with other hobbyists!</p>
+      <ul class="bullets">
+        <li>🎨 Share a new artwork</li>
+        <li>🎥 Record a short tutorial</li>
+        <li>📸 Post your favorite hobby moment</li>
+      </ul>
+      <a href="#" class="btn">Join Now</a>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>Contact us: info@hawiclub.com | +966 55 555 5555</p>
-    <div class="social">
-      <a href="https://www.instagram.com/hawi_228?igsh=MXdjZTJlenR5MmdwdQ==">Instagram</a> |
-      <a href="#">Twitter</a>
-    </div>
-    <p>&copy; 2025 HAWI Club. All rights reserved.</p>
-  </footer>
+    <!-- ===== STATISTICS ===== -->
+    <section class="stats fadeUp">
+      <h2 class="section-title">Our Achievements</h2>
+      <div class="stats-grid">
+        <div class="stat">
+          <img src="images/Prize2.png" alt="Members">
+          <strong>4,500+</strong>
+          <span>Active Members</span>
+        </div>
+        <div class="stat">
+          <img src="images/students2.png" alt="Trainers">
+          <strong>180+</strong>
+          <span>Certified Trainers</span>
+        </div>
+        <div class="stat">
+          <img src="images/Schdeules.png" alt="Clubs">
+          <strong>95+</strong>
+          <span>Clubs</span>
+        </div>
+        <div class="stat">
+          <img src="images/rating.png" alt="Rating">
+          <strong>4.8</strong>
+          <span>Average Rating</span>
+        </div>
+      </div>
+    </section>
 
-</body>
+    
+	<!-- ====== Footer Section ====== -->
+	<footer class="footer">
+		<div class="footer-content">
+			<p class="contact"> Contact us: <a href="#main-content">info@hawiclub.com</a> | <a href="#main-content">+966 55 555 5555</a></p>
+			<div class="social">
+				<a href="https://www.instagram.com/hawi_228?igsh=MXdjZTJlenR5MmdwdQ==" target="_blank">Instagram</a>
+				<span>|</span>
+				<a href="#main-content">Twitter</a>
+			</div>
+
+			<p class="copyright">&copy; 2025 HAWI Club . All rights reserved.</p>
+		</div>
+	</footer>
+  </body>
 </html>
