@@ -135,6 +135,18 @@ body {
   margin: 15px auto;
   line-height: 1.8;
 }
+/* ===== Breadcrumbs ===== */
+.breadcrumbs {
+  max-width: 1100px;
+  margin: 24px auto 0;
+  padding: 0 32px;
+  font-size: 14px;
+  color: #777;
+}
+.breadcrumbs ol { list-style: none; display: flex; gap: 8px; flex-wrap: wrap; }
+.breadcrumbs li+li::before { content: ">"; color: #EB6025; margin: 0 4px; }
+.breadcrumbs a { color: #EB6025; text-decoration: none; }
+.breadcrumbs a:hover { text-decoration: underline; }
 
 /* ===== FOOTER ===== */
 .footer {
@@ -251,6 +263,17 @@ body {
   border-radius: 18px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
+.btn-outline {
+    background-color:#ffffff ; /* أضف هذا السطر */
+    border: 2px solid #your-color-here;
+    color: #your-color-here;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #eb6025;
+}
+
 
 /* ===== SERVICES CARDS ===== */
 .services {
@@ -1185,3 +1208,5 @@ input[type="file"]:hover {
 input[type="checkbox"],
 input[type="radio"] {
   accent-color: #eb6025;
+  margin-right: 10px;
+  margin-left: 0;
