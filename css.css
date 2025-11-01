@@ -1,11 +1,7 @@
-مشسف
-
-
-
 /* =====================================================
    🌟 HAWI PLATFORM — UNIFIED STYLE SHEET
    Author: Fanar (فوفو)
-   Updated: Final Polished Version
+   Updated: Clean Version Without Duplicates
 ===================================================== */
 
 /* ===== IMPORT FONTS ===== */
@@ -31,6 +27,13 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
 }
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 /* ===== HEADER ===== */
 .header {
@@ -89,14 +92,9 @@ body {
 
 /* ===== BUTTONS ===== */
 .btn {
-  display: block !important;
-  text-align: center !important;
-  margin: 35px auto !important;
-  width: fit-content !important;
-  max-width: 100%;
-  align-self: center !important;
-  justify-self: center !important;
-
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 14px 40px;
   font-size: 18px;
   font-weight: 700;
@@ -107,6 +105,8 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
+  margin: 25px auto;
+  text-align: center;
 }
 
 .btn:hover {
@@ -164,16 +164,6 @@ body {
   color: #bbb;
   font-size: 14px;
   margin-top: 10px;
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 /* =====================================================
@@ -362,13 +352,14 @@ body {
 
 /* ===== CHALLENGE SECTION ===== */
 .challenge {
-  padding: 70px 20px;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 35px 25px;
   text-align: center;
   background: linear-gradient(180deg, #fff7f2 0%, #fde3d6 100%);
   border-radius: 20px;
-  margin: 70px auto;
-  max-width: 1000px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
 }
 .challenge h2 {
   font-size: 32px;
@@ -626,18 +617,46 @@ td a:hover { color: #eb6025; text-decoration: underline; }
 }
 
 /* ===== SERVICES GRID ===== */
+/* ===== SERVICES GRID ===== */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
   justify-content: center;
   align-items: stretch;
-  background-color: #fffdfc;
   border-radius: 16px;
   padding: 35px 40px;
   max-width: 1250px;
   margin: 0 auto 100px;
-  box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  /* إزالة السكرول من هنا */
+  /* overflow-y: auto; */
+  /* max-height: 600px; */
+}
+
+/* ===== SERVICES GRID في البروفايدر فقط ===== */
+.dashboard .services-grid {
+  overflow-y: auto;
+  max-height: 600px;
+  scroll-behavior: smooth;
+}
+
+.dashboard .services-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard .services-grid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.dashboard .services-grid::-webkit-scrollbar-thumb {
+  background: #eb6025;
+  border-radius: 10px;
+}
+
+.dashboard .services-grid::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* ===== SERVICE CARD ===== */
@@ -740,18 +759,7 @@ td a:hover { color: #eb6025; text-decoration: underline; }
   margin-top: auto;
 }
 
-/* ===== SCROLLBAR STYLING ===== */
-.services-grid::-webkit-scrollbar {
-  width: 8px;
-}
-.services-grid::-webkit-scrollbar-thumb {
-  background: #eb6025;
-  border-radius: 10px;
-}
-.services-grid::-webkit-scrollbar-track {
-  background: #faeee8;
-}
-
+/* ===== CUSTOMER DASHBOARD SERVICES ===== */
 .customer-dashboard-services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -769,12 +777,12 @@ td a:hover { color: #eb6025; text-decoration: underline; }
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   width: 100%;
   max-width: 400px;
-  min-height: 270px; /* ← قللنا الارتفاع شوي */
+  min-height: 270px;
   overflow: hidden;
-  padding: 25px 25px 30px; /* ← ضفنا padding جانبي */
-  display: flex;           /* ← أضفنا flexbox */
-  flex-direction: column;  /* ← يخلي المحتوى فوق وتحت */
-  justify-content: space-between; /* ← يخلي الزر دايم تحت */
+  padding: 25px 25px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -783,7 +791,6 @@ td a:hover { color: #eb6025; text-decoration: underline; }
   box-shadow: 0 8px 22px rgba(235, 96, 37, 0.18);
 }
 
-/* ===== CARD CONTENT ===== */
 .customer-service h3 {
   font-size: 20px;
   margin: 14px 16px 8px;
@@ -797,12 +804,12 @@ td a:hover { color: #eb6025; text-decoration: underline; }
 }
 
 .customer-service a {
-  align-self: center; /* ← بدل flex-end خليه center */
+  align-self: center;
   background: linear-gradient(135deg, #eb6025, #f7a26d);
   color: #fff;
-  padding: 8px 0; /* ← فوق وتحت فقط */
-  width: 80%; /* ← يخلي الزر ياخذ 80% من عرض الكرت */
-  text-align: center; /* ← يخلي النص داخل الزر بالوسط */
+  padding: 8px 0;
+  width: 80%;
+  text-align: center;
   border-radius: 10px;
   text-decoration: none;
   font-size: 16px;
@@ -814,12 +821,10 @@ td a:hover { color: #eb6025; text-decoration: underline; }
   background: linear-gradient(135deg, #f7a26d, #eb6025);
 }
 
-
-/* ===== ICON + TITLE STYLE ===== */
 .customer-service .service-title {
- display: flex;
+  display: flex;
   align-items: center;
-  justify-content: flex-start; /* ← يجعل العنوان والأيقونة يسار */
+  justify-content: flex-start;
   gap: 10px;
   font-size: 20px;
   color: #222;
@@ -828,21 +833,17 @@ td a:hover { color: #eb6025; text-decoration: underline; }
   text-align: left;
 }
 
-
-/* ===== ICON IMAGE STYLE ===== */
 .customer-service .service-icon {
-  width: 48px;     /* حجم الأيقونة */
+  width: 48px;
   height: 48px;
   object-fit: contain;
   border-radius: 8px;
-  background-color: #fff7f2; /* خلفية فاتحة للأيقونة */
+  background-color: #fff7f2;
   padding: 5px;
-  border: 1px solid #f0d6c7; /* إطار خفيف بيج */
+  border: 1px solid #f0d6c7;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
-
-
 
 /* ===== PREVIOUS REQUESTS TABLE ===== */
 .previous-requests {
@@ -889,7 +890,7 @@ td a:hover { color: #eb6025; text-decoration: underline; }
   background-color: #fff7f2;
 }
 
-/* ===== STATS SECTION ===== */
+/* ===== STATS BOXES ===== */
 .stats {
   display: flex;
   justify-content: center;
@@ -919,32 +920,13 @@ td a:hover { color: #eb6025; text-decoration: underline; }
   font-size: 17px;
   margin-bottom: 6px;
 }
- /*#eb6025
-#333;*/
+
 .stat-box p {
   color: #333;
   font-weight: bold;
   font-size: 18px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 992px) {
-  .customer-dashboard-services {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .customer-dashboard-services {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 /* =====================================================
    👤 PROVIDER DASHBOARD STYLES
 ===================================================== */
@@ -1006,14 +988,14 @@ td a:hover { color: #eb6025; text-decoration: underline; }
 
 /* ===== PROVIDER STATS ===== */
 .provider-stats {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)) !important;
-  gap: 35px !important;
-  justify-items: center !important;
-  align-items: stretch !important;
-  padding: 50px 20px !important;
-  max-width: 1000px !important;
-  margin: 0 auto 60px !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 35px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
 }
 
 .stat-card {
@@ -1203,270 +1185,3 @@ input[type="file"]:hover {
 input[type="checkbox"],
 input[type="radio"] {
   accent-color: #eb6025;
-  transform: scale(1.1);
-  margin-right: 8px;
-}
-
-/* ===== FORM BUTTONS ===== */
-form .btn,
-.form-actions .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 40px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #eb6025;
-  border: 2.5px solid #eb6025;
-  border-radius: 14px;
-  background-color: transparent;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  margin: 25px auto 0;
-}
-
-form .btn:hover,
-.form-actions .btn:hover {
-  background-color: #eb6025;
-  color: #fff;
-  box-shadow: 0 8px 20px rgba(235, 96, 37, 0.3);
-  transform: translateY(-3px);
-}
-
-/* ===== STAR RATING ===== */
-.rating {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.rating input {
-  display: none;
-}
-
-.rating label {
-  font-size: 30px;
-  color: #ddd;
-  cursor: pointer;
-  transition: color 0.2s;
-  margin: 0;
-}
-
-.rating label:before {
-  content: '★';
-}
-
-.rating input:checked ~ label,
-.rating label:hover,
-.rating label:hover ~ label {
-  color: #eb6025;
-}
-
-/* ===== BREADCRUMBS ===== */
-.breadcrumbs {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-.breadcrumbs ol {
-  list-style: none;
-  display: flex;
-  gap: 8px;
-  font-size: 14px;
-}
-
-.breadcrumbs li:not(:last-child)::after {
-  content: "›";
-  margin-left: 8px;
-  color: #999;
-}
-
-.breadcrumbs a {
-  color: #eb6025;
-  text-decoration: none;
-}
-
-.breadcrumbs a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumbs [aria-current="page"] {
-  color: #666;
-}
-
-/* ===== FORM DETAILS ===== */
-::placeholder {
-  color: #999;
-}
-
-fieldset {
-  border: 2px solid #f0d6c7;
-  border-radius: 14px;
-  padding: 20px 25px 30px;
-  background-color: #fffdfc;
-}
-
-legend {
-  color: #eb6025;
-  font-weight: 700;
-  padding: 0 10px;
-  font-size: 18px;
-}
-
-/* =====================================================
-   📱 RESPONSIVE DESIGN
-===================================================== */
-
-@media (max-width: 1200px) {
-  .header {
-    padding: 20px 40px;
-    gap: 4em;
-  }
-}
-
-@media (max-width: 992px) {
-  .header {
-    padding: 20px 30px;
-    gap: 2em;
-    flex-wrap: wrap;
-  }
-  
-  .nav-links {
-    gap: 20px;
-  }
-  
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 25px;
-  }
-  
-  .vision-content {
-    flex-direction: column;
-  }
-  
-  .hero-text {
-    left: 30px;
-    bottom: 30px;
-  }
-  
-  .hero-text h1 {
-    font-size: 36px;
-  }
-  
-  .customer-dashboard-services {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding: 15px 20px;
-    flex-direction: column;
-    gap: 1em;
-  }
-  
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .logo img {
-    height: 65px;
-  }
-  
-  .services-grid {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-  
-  .form-section {
-    padding: 25px 25px 40px;
-  }
-  
-  .form-row {
-    flex-direction: column;
-  }
-  
-  .page-title h1 {
-    font-size: 36px;
-  }
-  
-  .hero {
-    height: 350px;
-    margin: 40px auto;
-  }
-  
-  .hero-text {
-    left: 20px;
-    bottom: 20px;
-  }
-  
-  .hero-text h1 {
-    font-size: 28px;
-  }
-  
-  .hero-text p {
-    font-size: 16px;
-  }
-  
-  .provider-stats {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
-    gap: 25px;
-  }
-  
-  .action-buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .staff-scroll {
-    grid-template-columns: 1fr;
-  }
-  
-  .customer-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-  
-  .page-title h1 {
-    font-size: 28px;
-  }
-  
-  .page-title p {
-    font-size: 16px;
-  }
-  
-  .btn {
-    padding: 12px 30px;
-    font-size: 16px;
-  }
-  
-  .card {
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .stat {
-    width: 100%;
-    max-width: 200px;
-  }
-  
-  .customer-stats {
-    grid-template-columns: 1fr;
-  }
-  
-  .form-section {
-    padding: 20px 15px 30px;
-  }
-}
