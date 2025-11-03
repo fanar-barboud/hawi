@@ -1,14 +1,10 @@
-/* =====================================================
-   🌟 HAWI PLATFORM — UNIFIED STYLE SHEET
-   Author: Fanar (فوفو)
-   Updated: Clean Version Without Duplicates
-===================================================== */
+
 
 /* ===== IMPORT FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 
 /* =====================================================
-   🎯 COMMON STYLES (Shared Across All Pages)
+    COMMON STYLES (Shared Across All Pages)
 ===================================================== */
 
 /* ===== RESET & BASE ===== */
@@ -179,7 +175,7 @@ body {
 }
 
 /* =====================================================
-   🏠 HOME PAGE STYLES
+    HOME PAGE STYLES
 ===================================================== */
 
 /* ===== HERO SECTION ===== */
@@ -264,9 +260,9 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 .btn-outline {
-    background-color:#ffffff ; /* أضف هذا السطر */
-    border: 2px solid #your-color-here;
-    color: #your-color-here;
+    background-color:#ffffff ; 
+	border: 2px solid #eb6025; 
+	color: #eb6025;
 }
 
 .btn-outline:hover {
@@ -444,7 +440,7 @@ body {
 .stat span { color: #555; font-weight: 500; }
 
 /* =====================================================
-   ℹ️ ABOUT US PAGE STYLES
+    ABOUT US PAGE STYLES
 ===================================================== */
 
 /* ===== STAFF CARDS ===== */
@@ -592,7 +588,7 @@ td a:hover { color: #eb6025; text-decoration: underline; }
 }
 
 /* =====================================================
-   🛍️ SERVICES PAGE STYLES
+    SERVICES PAGE STYLES
 ===================================================== */
 
 /* ===== HERO IMAGE ===== */
@@ -640,7 +636,6 @@ td a:hover { color: #eb6025; text-decoration: underline; }
 }
 
 /* ===== SERVICES GRID ===== */
-/* ===== SERVICES GRID ===== */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -652,12 +647,10 @@ td a:hover { color: #eb6025; text-decoration: underline; }
   max-width: 1250px;
   margin: 0 auto 100px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  /* إزالة السكرول من هنا */
-  /* overflow-y: auto; */
-  /* max-height: 600px; */
+
 }
 
-/* ===== SERVICES GRID في البروفايدر فقط ===== */
+/* ===== SERVICES GRID  ===== */
 .dashboard .services-grid {
   overflow-y: auto;
   max-height: 600px;
@@ -951,7 +944,7 @@ td a:hover { color: #eb6025; text-decoration: underline; }
 }
 
 /* =====================================================
-   👤 PROVIDER DASHBOARD STYLES
+   PROVIDER DASHBOARD STYLES
 ===================================================== */
 
 /* ===== PROVIDER HERO SECTION ===== */
@@ -1098,7 +1091,7 @@ td a:hover { color: #eb6025; text-decoration: underline; }
 }
 
 /* =====================================================
-   📝 FORM STYLES (Used Across Multiple Pages)
+    FORM STYLES (Used Across Multiple Pages)
 ===================================================== */
 
 .form-section {
